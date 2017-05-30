@@ -10,10 +10,10 @@ Gem versioning
 | 3.1.12        |         |                         |           |
 | 3.2.22.5      |         | 0.0.0                   |           |
 | 4.1           | tested  | 0.0.0                   |<a href="https://github.com/jasonfb/html-render-example-app-rails4116">example app</a>|
-| 4.2           | tested  | 0.0.0                   |<a href="https://github.com/jasonfb/html-render-example-app-rails-425">example app</a>|
-| 5.0           |         |                         |          |
-| 5.1           |         |                         |          |
-| 5.2           |         |                         |          |
+| 4.2           | tested  | 0.0.0                   |<a href="https://github.com/jasonfb/html-render-example-app-rails425">example app</a>|
+| 5.0.3         | tested  | 0.0.0                   |<a href="https://github.com/jasonfb/html-render-example-app-rails503">example app</a> |
+| 5.1.1         | tested  | 0.0.0                   |<a href="https://github.com/jasonfb/html-render-example-app-rails511">example app</a>|
+| 5.2           | not tested |                         |          |
 
 # Setup/Installation:
 ```
