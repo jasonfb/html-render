@@ -4,16 +4,16 @@ This simple GEM is for patching a special method onto your Rails controllers cal
 
 Gem versioning
 
-| Rails version | tested? | use version of this gem |
-|---------------|---------|-------------------------|
-| 3.0.20        |         |                         |
-| 3.1.12        |         |                         |
-| 3.2.22.5      |         | 0.0.0                   |
-| Rails 4.1     | tested  | 0.0.0                   |
-| Rails 4.2     | tested  | 0.0.0                   |
-| Rails 5.0     |         |                         |
-| Rails 5.1     |         |                         |
-| Rails 5.2     |         |                         |
+| Rails version | tested? | use version of this gem |example app|
+|---------------|---------|-------------------------|-----------|
+| 3.0.20        |         |                         |           |
+| 3.1.12        |         |                         |           |
+| 3.2.22.5      |         | 0.0.0                   |           |
+| 4.1           | tested  | 0.0.0                   |<a href="https://github.com/jasonfb/html-render-example-app-rails4116">example app</a>|
+| 4.2           | tested  | 0.0.0                   |<a href="https://github.com/jasonfb/html-render-example-app-rails-425">example app</a>|
+| 5.0           |         |                         |          |
+| 5.1           |         |                         |          |
+| 5.2           |         |                         |          |
 
 # Setup/Installation:
 ```
