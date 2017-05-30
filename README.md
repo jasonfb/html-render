@@ -2,6 +2,19 @@
 This simple GEM is for patching a special method onto your Rails controllers called render_html_content. render_html_content allows you to render HTML inside of a JSON result. 
 
 
+Gem versioning
+
+| Rails version | tested? | use version of this gem |
+|---------------|---------|-------------------------|
+| 3.0.20        |         |                         |
+| 3.1.12        |         |                         |
+| 3.2.22.5      |         | 0.0.0                   |
+| Rails 4.1     | tested  | 0.0.0                   |
+| Rails 4.2     | tested  | 0.0.0                   |
+| Rails 5.0     |         |                         |
+| Rails 5.1     |         |                         |
+| Rails 5.2     |         |                         |
+
 # Setup/Installation:
 ```
 gem 'htmlrender'
@@ -23,6 +36,7 @@ respond_to do |format|
   format.json { render json: {
       articles_html: render_html_content(partial: "home/articles", layout: false)
     }
+  }
 end
 ```
 
