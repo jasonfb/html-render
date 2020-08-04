@@ -4,20 +4,7 @@ This simple gem is for patching a special method onto your Rails controllers cal
 A complete walk-through with an example app can be found on my blog here: 
 https://blog.jasonfleetwoodboldt.com/html-render/
 
-## Setup/Installation:
-=======
-Gem versioning
 
-| Rails version | tested? | use version of this gem |example app|
-|---------------|---------|-------------------------|-----------|
-| 3.0.20        |         |                         |           |
-| 3.1.12        |         |                         |           |
-| 3.2.22.5      |         | 0.0.0                   |           |
-| 4.1           | tested  | 0.0.0                   |<a href="https://github.com/jasonfb/html-render-example-app-rails4116">example app</a>|
-| 4.2           | tested  | 0.0.0                   |<a href="https://github.com/jasonfb/html-render-example-app-rails425">example app</a>|
-| 5.0.3         | tested  | 0.0.0                   |<a href="https://github.com/jasonfb/html-render-example-app-rails503">example app</a> |
-| 5.1.1         | tested  | 0.0.0                   |<a href="https://github.com/jasonfb/html-render-example-app-rails511">example app</a>|
-| 5.2           | not tested |                         |          |
 
 # Setup/Installation:
 ```
