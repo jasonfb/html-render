@@ -5,12 +5,26 @@ A complete walk-through with an example app can be found on my blog here:
 https://blog.jasonfleetwoodboldt.com/html-render/
 
 ## Setup/Installation:
+=======
+Gem versioning
+
+| Rails version | tested? | use version of this gem |example app|
+|---------------|---------|-------------------------|-----------|
+| 3.0.20        |         |                         |           |
+| 3.1.12        |         |                         |           |
+| 3.2.22.5      |         | 0.0.0                   |           |
+| 4.1           | tested  | 0.0.0                   |<a href="https://github.com/jasonfb/html-render-example-app-rails4116">example app</a>|
+| 4.2           | tested  | 0.0.0                   |<a href="https://github.com/jasonfb/html-render-example-app-rails425">example app</a>|
+| 5.0.3         | tested  | 0.0.0                   |<a href="https://github.com/jasonfb/html-render-example-app-rails503">example app</a> |
+| 5.1.1         | tested  | 0.0.0                   |<a href="https://github.com/jasonfb/html-render-example-app-rails511">example app</a>|
+| 5.2           | not tested |                         |          |
+
+# Setup/Installation:
 ```
 gem 'htmlrender'
 ```
 
 Close to the top of your ApplicationController, add the following line
-
 ```
 include HtmlRender
 ```
@@ -20,17 +34,27 @@ That's it!
 ## Usage:
 
 You use this gem when you want to transfer HTML within a JSON output. render_html_content takes the same arguments as render_to_string, except forces the rendering as if the request was for an HTML format. (render_to_string called within a request for a JSON result will not render as HTML).
+=======
+```
+include HtmlRender
+```
+That's it!
+
+# Usage:
+>>>>>>> 6446e26540cc784f648ddb079bff9319ce1c05bc
 
 Your action will end with something like so:
 
+```
 respond_to do |format|
   format.html { render }
   format.json { render json: {
       articles_html: render_html_content(partial: "home/articles", layout: false), 
       pagination_html: render_html_content(partial: "home/articles_pagination", layout: false)
     }
+  }
 end
-
+```
 
 ## Why would you want to do such a thing?
 
@@ -50,10 +74,14 @@ Instead, send a request for a JSON format response and label the json according 
 
 You will make $.ajax requests to your server to retrieve updated content from the page (that part of the code is not shown) 
 
+<<<<<<< HEAD
 On the back-end controller use the render_html_content method described above. You can then create a JSON response that contains any number of HTML blocks, each named within the JSON output, and work with that response from the Javascript you called it from. 
 
 For example, your action might respond this way:
 
+=======
+For example:
+>>>>>>> 6446e26540cc784f648ddb079bff9319ce1c05bc
 ```
 render json: {
   articles_html: render_html_content(partial: "home/articles", layout: false),
@@ -62,7 +90,10 @@ render json: {
 ```
 
 In the javascript side, you'd be doing something like so (assume some_url is set outside of this code):
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6446e26540cc784f648ddb079bff9319ce1c05bc
 ```
 $.ajax({
   dataType: "json",
@@ -73,5 +104,9 @@ $.ajax({
 });
 ```
 
+<<<<<<< HEAD
 You can even mix HTML blocks and data in the same JSON output (although this may or may not be a good idea depending on your use cases).
+=======
+This example is from a basic infinite scroll implementation. In our case, I want to append the HTML content onto the end of an existing DOM element, but replace another DOM element with the text "More than 100 articles" if and only if the articles_count > 100. (This is a contrived example to illustrate that you can mix HTML and data-based respond within the same JSON result.)
+>>>>>>> 6446e26540cc784f648ddb079bff9319ce1c05bc
 
